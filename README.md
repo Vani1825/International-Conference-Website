@@ -1,6 +1,8 @@
 A fully responsive and structured web application designed for the International Conference on Data Intelligence, Computing, Electronics & Technology (DICE&ET) 2026. This site provides complete conference information including tracks, committees, call for papers, registration details, deadlines, venue, and more.
+
 🌐 Project Overview
 The DICE&ET 2026 website is built to serve as the official platform for participants, researchers, academicians, and industry experts. It offers a clean UI and easy navigation to access conference content such as schedules, committees, tracks, guidelines, and registration instructions. The design ensures consistency across pages and is optimized for both desktop and mobile devices.
+
 
 ✨ Features
 Home & About Sections – Overview of the conference, university, and organizing departments.
