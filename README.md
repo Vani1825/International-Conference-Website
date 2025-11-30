@@ -12,9 +12,11 @@ Committee Page – Organizing, advisory, and technical committee details.
 Registration Page – Fee structure, payment mode (cards, QR codes), and registration form.
 Footer & Header – Consistent styling across all pages.
 Responsive Design – Smooth viewing across devices.
+
 🛠️ Tech Stack
 HTML5
 CSS3
 JavaScript
+
 🎯 Purpose
 This project aims to provide a complete, reliable, and user-friendly platform for managing and showcasing all aspects of the DICE&ET 2026 international conference. It enhances accessibility and helps attendees easily find all important information in one place.
