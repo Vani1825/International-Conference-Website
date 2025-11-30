@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DICE&ET 2026</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Header --> 
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://i.postimg.cc/BbS1XKXL/image.png" alt="Icon" class="icon">
+      <div>
+        <h1>DICE&ET 2026</h1>
+        <p><b>International Conference on Developments in Interdisciplinary ComputationalEngineering and Emerging Technologies </b></p>
+      </div>
+    </div>
+    <nav class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="#about-conference">About</a>
+
+  <div class="dropdown">
+    <a href="#" class="dropbtn">Call for Papers</a>
+    <div class="dropdown-content">
+      <a href="Important.html">Important Dates</a>
+      <a href="guidelines.html">Author Guidelines</a>
+       <a href="AllTracks.html">Tracks</a> 
+      <a href="paperFormat.html">Paper Format</a>
+      <a href="submitPaper.html">Paper Submission</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#" class="dropbtn">Committee</a>
+    <div class="dropdown-content">
+      <a href="commiittee.html">Organizing Committee</a>
+      <a href="technical.html">Technical Committee</a>
+      <a href="steering.html">Other Committees</a>
+    </div>
+  </div>
+  <a href="registration1.html">Registration</a>
+</nav>
+  </header>
+
+<!-- First Section -->
+<section class="hero">
+  <div class="hero-overlay"></div> <!-- Dark overlay for text readability -->
+  <div class="watermark">DICE&ET 2026</div> <!-- Watermark text -->
+
+  <h2>
+    International Conference <br>on<br> 
+    Developments in Interdisciplinary Computational Engineering and Emerging Technologies
+    <br>(DICE&ET 2026)
+  </h2>
+  <p>Advancing knowledge through collaborative research and innovative discoveries. Join leading researchers from around the world.</p>
+
+  <div class="info-cards">
+    <div class="card">
+      <p><strong>📅 Conference Dates</strong><br>23-24 December, 2025</p>
+    </div>
+    <div class="card location-card" onclick="openMap()">
+      <p><strong>📍 Venue</strong><br>Chitkara University, Punjab</p>
+    </div>
+  </div>
+
+  <div class="cta-buttons">
+    <button class="primary-btn" onclick="openDatesModal()">Important Dates</button>
+    <a href="registration1.html"><button class="secondary-btn">📅 Register Now</button></a>
+  </div>
+</section>
+
+
+<!-- Important Dates Modal -->
+<div id="datesModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeDatesModal()">&times;</span>
+    <h3>📅<u> Important Dates</u></h3>
+    <table class="important-dates-table">
+      <tr>
+        <td>Abstract / Extended Abstract / Full Paper Submission</td>
+        <td>14th August, 2026</td>
+      </tr>
+      <tr>
+        <td>Acceptance Notification</td>
+        <td>9th October, 2026</td>
+      </tr>
+      <tr>
+        <td>Camera Ready Paper Submission</td>
+        <td>30th October, 2026</td>
+      </tr>
+      <tr>
+        <td>Registration</td>
+        <td>13th November, 2026</td>
+      </tr>
+      <tr>
+        <td>Conference Date</td>
+        <td>23-24 December, 2025</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+  <div id="mapModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMap()">&times;</span>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110173.58794925129!2d76.66061885194603!3d30.49296025681278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1754458630203!5m2!1sen!2sin"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+</section>
+
+
+  <!-------About section-->
+ <section id="about" class="about-section">
+  <div class="container">
+    <h2>About Chitkara University</h2>
+    <div class="about-content">
+      <img src="https://i.postimg.cc/G3KzCqDk/Screenshot-2025-08-05-202745.png" alt="Chitkara University Campus" class="about-image" />
+      <p>
+        Engineering programs at Chitkara University in Punjab and Himachal Pradesh do more than just develop world-class engineers and computer scientists; they nurture bright minds into changemakers with a global perspective, superior technical prowess, and exceptional leadership skills.
+        From the very first year,our common core curriculum allows you to explore diverse engineering disciplines and discover the perfect path for a meaningful and successful career.
+      </p>
+    </div>
+    <!-- University Logos Row -->
+<div class="university-logos">
+  <div class="logo-item">
+    <img src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/2025/home-page/rankings/webp/ranking-naac-desk-New.webp" alt="Logo 1">
+  </div>
+  <div class="logo-item">
+    <img src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/2025/home-page/rankings/webp/ranking-nirf-desk.webp" alt="Logo 2">
+  </div>
+  <div class="logo-item">
+    <img src="https://www.chitkara.edu.in/chitkara-university-logo.svg" alt="Logo 2">
+  </div>
+  <div class="logo-item">
+    <img src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/2025/home-page/rankings/webp/ranking-qs-desk.webp" alt="Logo 3">
+  </div>
+  <div class="logo-item">
+    <img src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/2025/home-page/rankings/webp/ranking-the-desk.webp" alt="Logo 4">
+  </div>
+</div>
+
+<br><br>
+    <h2>Department of Interdisciplinary Courses in Engineering (DICE)</h2>
+    <div class="about-content">
+      <img src="https://i.postimg.cc/s2CgL8JS/image.png" alt="DICE Department" class="about-image" />
+      <p>
+        The<b> DICE-Department of Interdisciplinary Courses in Engineering </b> department fosters collaboration among students and faculty from diverse academic backgrounds, encouraging them to work together on interdisciplinary projects, competitions, and hackathons. 
+        It connects students with industry professionals, helping them stay abreast of trends and make informed career decisions—fully aligned with India’s National Education Policy (NEP) 2020.
+      </p>
+    </div>
+
+    <h2 id="about-conference">About The Conference-DICE&ET 2026</h2>
+    <div class="about-content">
+      <img src="https://i.postimg.cc/kg6HBnt3/image.png" alt="DICE Department" class="about-image" />
+      <p><B>The  International  Conference  on  Developments  in  Interdisciplinary  Computational  Engineering 
+and  Emerging  Technologies  (DICE  &  ET  2026)</B>  is  scheduled  to  be  held  during  <b>23-24  December 
+2026</b>  at  <b>Chitkara  University  Institute  of  Engineering  and  Technology,  Punjab </b> .  It  aims  to  provide  an 
+outstanding  platform  for  academic,  research,  and  industrial  communities  to  address  new  trends, 
+challenges  and  emerging  technologies  in  the  fields  of  Multidisciplinary  Innovations  in Electronics/Wireless/Optical  Networks  and  Security  sensors,  Innovative  Robotics,  Next-generation 
+IOT  and  Industrial  Automation  with  Computational  Intelligence,  Artificial  Intelligence,  Machine 
+Learning,  Big  data,  Blockchain  and  analytics .  The  conference  will  feature  talks  given  by  technical 
+experts and research paper presentations.
+        </p>
+    </div>
+</section>
+ 
+<!-- Tracks Section -->
+<section class="tracks-section" id="Tracks">
+  <h2 class="section-title">Tracks</h2>
+  <div class="track-cards">
+    <div class="track-card" onclick="openPopup('popup1')">
+      <img src="https://i.postimg.cc/15cr8cVG/fbc8efa0-6040-464e-b0fd-4c24efe3415b.jpg" alt="Track 1">
+      <p>Multidisciplinary  Innovations  in  Electronics/Wireless/Optical  Networks  and  Security sensors</p>
+    </div>
+    <div class="track-card" onclick="openPopup('popup2')">
+      <img src="https://i.postimg.cc/bvGn9QrF/cc4cf716-0cab-4923-b2db-41767682da0f.jpg" alt="Track 2">
+      <p> Innovative  Robotics,  Next-generation  IOT  and  Industrial  Automation  with  Computational Intelligence</p>
+    </div>
+    <div class="track-card" onclick="openPopup('popup3')">
+      <img src="https://i.postimg.cc/DyhFnnKC/Screenshot-2025-08-13-150049.png" alt="Track 3">
+      <p>Artificial  Intelligence,  Machine  Learning,  Big  data,  Blockchain  and  <br> Analytics</p>
+    </div>
+  </div>
+
+  <!-- Popups -->
+  <div id="popup1" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup1')">&times;</span>
+      <h3>Multidisciplinary  Innovations  in  Electronics/Wireless/Optical  Networks  and  Security sensors</h3>
+      <div class="sub-tracks">
+  <span>5G, 6G, and Beyond Networks</span>
+  <span>Wireless Sensor Networks</span>
+  <span>Underwater and Underground Communication Networks</span>
+  <span>Satellite Communication Systems</span>
+  <span>MIMO, OFDM, and Antenna Design</span>
+  <span>Microelectronics</span>
+  <span>Nanoelectronics</span>
+  <span>Embedded Systems</span>
+  <span>Renewable and Sustainable Energy</span>
+  <span>Power Systems and Smart Grid</span>
+  <span>Wearable Network and Systems</span>
+  <span>Vehicular Networks and Applications</span>
+  <span>Next Generation Networking</span>
+  <span>QoS Provisioning and Architecture</span>
+  <span>Computer Security</span>
+  <span>Cognitive Radio and Dynamic Spectrum Access</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup2" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup2')">&times;</span>
+      <h3>  Innovative  Robotics,  Next-generation  IOT  and  Industrial  Automation  with  Computational Intelligence</h3>
+      <div class="sub-tracks">
+        <span>Edge and Fog Computing Architectures</span>
+  <span>Cloud Computing and Distributed Systems</span>
+  <span>Blockchain and Distributed Ledger Technologies</span>
+  <span>Autonomous Robots and Intelligent Systems</span>
+  <span>Human-Robot Interaction</span>
+  <span>Swarm Robotics and Multi-Agent Systems</span>
+  <span>Robotic Vision and Sensing Technologies</span>
+  <span>Collaborative Robots and Industrial Automation</span>
+  <span>Soft Robotics and Bio-inspired Robotics</span>
+  <span>Applications of Robotics in Healthcare, Agriculture, and Manufacturing</span>
+  <span>IoT Architectures, Protocols, and Standards</span>
+  <span>Smart Sensors and Actuators</span>
+  <span>IoT Security, Privacy, and Trust</span>
+  <span>IoT in Smart Cities and Urban Planning</span>
+  <span>Industrial IoT and Smart Manufacturing</span>
+  <span>Intelligent Manufacturing Systems and Industry 4.0</span>
+  <span>Real-Time Monitoring and Control Systems</span>
+  <span>Evolutionary Computation and Genetic Algorithms</span>
+  <span>Neural Networks and Artificial Intelligence in Control Systems</span>
+  <span>Intelligent Decision Support Systems</span>
+  <span>Secure Communication Protocols in IoT and Robotics</span>
+  <span>Cyber-Physical Security in Smart Factories</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup3" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup3')">&times;</span>
+      <h3>Artificial  Intelligence,  Machine  Learning,  Big  data,  Blockchain  and  analytics</h3>
+      <div class="sub-tracks">
+  <span>AI in Healthcare, Medicine, Finance and Economic Modelling</span>
+  <span>AI for Social Good and Sustainable Development</span>
+  <span>Model Interpretability and Explainable ML</span>
+  <span>ML for Time Series Analysis and Forecasting</span>
+  <span>Applications of ML in IoT, Cybersecurity, and Autonomous Vehicles</span>
+  <span>Real-Time Data Processing and Stream Analytics</span>
+  <span>Data Warehousing, ETL, and Data Lakes</span>
+  <span>Scalable Machine Learning with Big Data</span>
+  <span>Big Data Architecture and Frameworks</span>
+  <span>Blockchain in Finance and Cryptocurrency</span>
+  <span>Integration of Blockchain with IoT and AI</span>
+  <span>Blockchain for Healthcare and Identity Management</span>
+  <span>Data Mining and Knowledge Discovery</span>
+  <span>Predictive and Prescriptive Analytics</span>
+  <span>Data Visualization Techniques and Tools</span>
+  <span>AI and ML in Smart Cities and Urban Planning</span>
+  <span>Big Data and Analytics in Healthcare and Medicine</span>
+  <span>Blockchain Applications in Government and Public Services</span>
+  <span>Sensor, Wireless Technologies, and APIs</span>
+ </div>
+    </div>
+  </div>
+</section>
+
+      
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>DICE&ET 2026</h3>
+        <p>
+          An international platform bringing together researchers, academicians, and industry leaders to share innovations and advancements in data, computing, electronics, and technology.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#about-conference">About the conference</a></li>
+          <li><a href="registration1.html">Registration</a></li>
+          <li><a href="Important.html">Important Dates</a></li>
+          <li><a href="commiittee.html">Committee</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li>Dr. Rajneesh Talwar</li>
+          <li>Professor & Dean-DICE Department </li>
+          <li>Chitkara University Institute of Engineering and Technology, Punjab</li>
+          <li>Rajpura,Punjab 140401</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="footer-bottom">
+      © DICE&ET 2026 International Conference on Developments in Interdisciplinary ComputationalEngineering and Emerging Technologies
+
+. <BR>All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+
+    function openPopup(id) {
+  document.getElementById(id).style.display = 'block';
+}
+
+function closePopup(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+// Optional: Click outside popup to close
+window.addEventListener('click', function(event) {
+  const popups = document.querySelectorAll('.popup');
+  popups.forEach(popup => {
+    if (event.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+});
+
+  function openMap() {
+    document.getElementById('mapModal').style.display = 'block';
+  }
+
+  function closeMap() {
+    document.getElementById('mapModal').style.display = 'none';
+  }
+   window.onclick = function(event) {
+    const modal = document.getElementById('mapModal');
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+//<!-----important dates js----!>
+  function openDatesModal() {
+    document.getElementById("datesModal").style.display = "block";
+  }
+
+  function closeDatesModal() {
+    document.getElementById("datesModal").style.display = "none";
+  }
+
+  // Close modal when clicking outside the content
+  window.onclick = function(event) {
+    const modal = document.getElementById("datesModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+
+
+</script>
+
+
+</body>
+</html>

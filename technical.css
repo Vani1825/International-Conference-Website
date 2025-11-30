@@ -1,0 +1,267 @@
+/* --- Global Styles & Typography --- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+  --primary-dark: #1a237e;
+  --primary-light: #3f51b5;
+  --accent-blue: #007bff;
+  --bg-light: #f8f9fa;
+  --bg-secondary: #eef3fb;
+  --text-dark: #333;
+  --text-light: #666;
+  --border-light: #e0e7ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url('https://www.transparenttextures.com/patterns/geometry.png'), linear-gradient(to bottom, #e3ecf7, #fefefe);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  color: #183985;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo h1 {
+  font-size: 1.2rem;
+  color: #183985;
+}
+
+.logo p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #183985;
+  font-weight: 500;
+  
+}
+
+
+.dropbtn {
+  text-decoration: none;
+  color: #183985;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.nav-links a:hover, .dropbtn:hover {
+  background-color: var(--border-light);
+  color: var(--primary-dark);
+}
+
+/* Dropdown base */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  text-decoration: none;
+  color: #183985;
+  font-weight: 600;
+  padding: 1rem 0.9rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  z-index: 9999;
+}
+
+/* Dropdown item links */
+.dropdown-content a {
+  padding: 0.7rem 1rem;
+  display: block;
+  color: #183985;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f4ff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.footer {
+  background-color: #0b1120;
+  color: #e2e8f0;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+   align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #1e293b;
+  margin: 30px 0 10px;
+}
+/* --- Table Section (Modern & Refined) --- */
+
+/* Outer box for the table */
+.committee-box {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 0; /* Changed padding to be on the table cells instead */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e7ff;
+  overflow: hidden; /* Ensures rounded corners apply to content */
+}
+
+/* Heading inside the box */
+.committee-box h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #1a237e; /* Dark Blue */
+  margin: 2rem 0 1.5rem;
+}
+
+/* Table styling */
+.committee-table {
+  width: 100%;
+  border-collapse: separate; /* Use separate to allow spacing */
+  border-spacing: 0 0.5rem; /* Adds space between rows */
+  font-size: 1rem;
+}
+
+/* Header row styling */
+.committee-table thead {
+  background-color: #1a237e;
+  color: white;
+}
+
+.committee-table th {
+  padding: 1.5rem 2rem; /* Generous padding for clean look */
+  text-align: left;
+  font-weight: 700;
+  white-space: nowrap;
+  border-bottom: none; /* No border for a cleaner look */
+}
+
+/* Body rows styling with subtle effect */
+.committee-table tbody tr {
+  background-color: white;
+  border-bottom: 1px solid #e0e7ff; /* A subtle line for separation */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect on rows */
+.committee-table tbody tr:hover {
+  background-color: #f0f4ff; /* Lighter highlight color on hover */
+  transform: scale(1.01); /* Subtle lift on hover */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.committee-table td {
+  padding: 1.5rem 2rem; /* Generous padding for readability */
+  border-bottom: none; /* No border for a clean look */
+  vertical-align: top;
+}

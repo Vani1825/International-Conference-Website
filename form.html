@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DICE&ET 2026</title>
+  <link rel="stylesheet" href="form.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header --> 
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://i.postimg.cc/BbS1XKXL/image.png" alt="Icon" class="icon">
+      <div>
+        <h1>DICE&ET 2026</h1>
+        <p><b>International Conference on Developments in Interdisciplinary ComputationalEngineering and Emerging Technologies </b></p>
+      </div>
+    </div>
+    <nav class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="index.html#about-conference">About</a>
+
+  <div class="dropdown">
+    <a href="#" class="dropbtn">Call for Papers</a>
+    <div class="dropdown-content">
+      <a href="Important.html">Important Dates</a>
+      <a href="guidelines.html">Author Guidelines</a>
+      <a href="AllTracks.html">Tracks</a>
+      <a href="paperFormat.html">Paper Format</a>
+      <a href="submitPaper.html">Submit Paper</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#" class="dropbtn">Committee</a>
+    <div class="dropdown-content">
+        <a href="commiittee.html">Organizing Committee</a>
+      <a href="technical.html">Technical Committee</a>
+      <a href="steering.html">Other Committees</a>
+    </div>
+  </div>
+  <a href="registration1.html">Registration</a>
+</nav>
+  </header>
+
+<!-----Form-->
+ <div class="form-container">
+    <h2>Registration Form</h2>
+    <h3>International Conference on Developments in Interdisciplinary Computational Engineering and<br> Emerging Technologies<br> (DICE&ET 2026)</h3>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="position">Position:</label>
+      <input type="text" id="position" name="position" required />
+
+      <label for="organization">Organization/Institute:</label>
+      <input type="text" id="organization" name="organization" required />
+
+      <label for="mailing">Mailing Address:</label>
+      <textarea id="mailing" name="mailing" required></textarea>
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" required />
+
+      <label for="email">Author Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone number:</label>
+      <input type="text" id="phone" name="phone" required />
+
+      <label for="author_names">Name of the author(s):</label>
+      <input type="text" id="author_names" name="author_names" required />
+
+      <label for="title_paper">Title of paper:</label>
+      <input type="text" id="title_paper" name="title_paper" required />
+
+      <label for="broad_area">Broad Area of the paper:</label>
+      <input type="text" id="broad_area" name="broad_area" required />
+
+      <label for="accompanying_person">Number and name of accompanying person:</label>
+      <input type="text" id="accompanying_person" name="accompanying_person" />
+
+      <label for="arrival_date">Date of arrival:</label>
+      <input type="date" id="arrival_date" name="arrival_date" required />
+
+      <label for="departure_date">Date of departure:</label>
+      <input type="date" id="departure_date" name="departure_date" required />
+
+      <div class="inline-group">
+        <span><strong>Accommodation:</strong></span>
+        <div class="checkbox-group">
+          <input type="checkbox" id="accommodation_required" name="accommodation" value="required" />
+          <label for="accommodation_required">Required</label>
+
+          <input type="checkbox" id="accommodation_not_required" name="accommodation" value="not_required" />
+          <label for="accommodation_not_required">Not required</label>
+        </div>
+      </div>
+      <h2 style="text-align: left; font-size: 19px;"><u>Payment Details</u> </h2>
+<label for="Transaction">Transaction ID</label>
+      <input type="text" id="Transaction" name="Transaction" required />
+
+ <label for="paymentScreenshot">Upload Payment Screenshot:</label>
+  <input type="file" id="paymentScreenshot" name="paymentScreenshot" accept="image/*" required>
+
+
+      <em>Important Note: Please bring your original identity card/proof of your present organization.</em>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+<br>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>DICE&ET 2026</h3>
+        <p>
+          An international platform bringing together researchers, academicians, and industry leaders to share innovations and advancements in data, computing, electronics, and technology.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#about-conference">About the conference</a></li>
+          <li><a href="registration1.html">Registration</a></li>
+          <li><a href="Important.html">Important Dates</a></li>
+          <li><a href="commiittee.html">Committee</a></li>
+          <li><a href="index.html">Home </a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li>Dr. Rajneesh Talwar</li>
+          <li>Professor & Dean-DICE Department </li>
+          <li>Chitkara University Institute of Engineering and Technology,Punjab</li>
+          <li>Rajpura,Punjab 140401</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="footer-bottom">
+      © DICE&ET 2026 International Conference on Developments in Interdisciplinary ComputationalEngineering and Emerging Technologies
+
+. <BR>All rights reserved.
+    </div>
+  </footer>
+  <script>
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();  // prevent default submission for validation
+
+    const missingFields = [];
+
+    // Validate text inputs, email, date, textarea, file
+    const requiredFields = form.querySelectorAll('input[required]:not([type="checkbox"]), textarea[required]');
+    requiredFields.forEach(field => {
+      if (field.type === 'file') {
+        if (field.files.length === 0) {
+          missingFields.push(getFieldName(field));
+        }
+      } else if (field.value.trim() === '') {
+        missingFields.push(getFieldName(field));
+      }
+    });
+
+    // Validate required checkbox groups
+    // Find all unique checkbox names that have at least one required checkbox
+    const checkboxNames = new Set();
+    form.querySelectorAll('input[type="checkbox"][required]').forEach(cb => {
+      checkboxNames.add(cb.name);
+    });
+
+    checkboxNames.forEach(name => {
+      const checkboxes = form.querySelectorAll(`input[type="checkbox"][name="${name}"]`);
+      const isAnyChecked = Array.from(checkboxes).some(cb => cb.checked);
+      if (!isAnyChecked) {
+        // Use label from first checkbox for name
+        missingFields.push(getFieldName(checkboxes[0]));
+      }
+    });
+
+    if (missingFields.length > 0) {
+      alert("Please fill in the following required fields:\n- " + missingFields.join("\n- "));
+    } else {
+      // All required fields filled — submit the form
+      form.submit();
+    }
+
+    // Helper function to get readable label or field name
+    function getFieldName(field) {
+      const label = form.querySelector(`label[for="${field.id}"]`);
+      if (label) {
+        return label.innerText.replace(/[:*]/g, '').trim();
+      }
+      // fallback to name or id
+      return field.name || field.id || "Unnamed field";
+    }
+  });
+</script>
+
+</body>
+</html>

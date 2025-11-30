@@ -1,0 +1,275 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  color: #183985;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo h1 {
+  font-size: 1.2rem;
+  color: #183985;
+}
+
+.logo p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #183985;
+  font-weight: 500;
+  
+}
+
+.nav-links a:hover {
+  background-color: #e0e7ff;
+  border-radius: 6px;
+}
+
+.dropbtn {
+  text-decoration: none;
+  color: #183985;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropbtn:hover {
+  background-color: #e0e7ff;
+  border-radius: 6px;
+}
+
+/* Dropdown base */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  text-decoration: none;
+  color: #183985;
+  font-weight: 600;
+  padding: 1rem 0.9rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  z-index: 9999;
+}
+
+/* Dropdown item links */
+.dropdown-content a {
+  padding: 0.7rem 1rem;
+  display: block;
+  color: #183985;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f4ff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* --- TRACKS SECTION STYLES ONLY --- */
+
+.technical-tracks {
+  padding: 120px 5% 50px;
+  text-align: center;
+  background-color: #f8f9fa; /* Maintains light background */
+}
+
+.tracks-heading {
+  text-align: center;
+  font-size: 2.5rem; /* Larger heading */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #1a237e;
+}
+
+.track-note {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+.track-box {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* Soft shadow for card effect */
+  padding: 2.5rem;
+  text-align: left;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border: 1px solid #e0e7ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.track-box:hover {
+  transform: translateY(-8px); /* Lifts the card on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #183985; /* Changes border color on hover */
+}
+
+.track-number {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #183985;
+  margin-bottom: 0.5rem;
+}
+
+.track-title {
+  font-size: 1.75rem;
+  margin: 0;
+  color: #1a237e;
+}
+
+.track-box ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.track-box ul li {
+  position: relative;
+  padding-left: 1.5em;
+  text-align: justify;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.track-box ul li::before {
+  content: "»"; /* Modern bullet point */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #183985;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .track-box ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- FOOTER STYLES (UNCHANGED) --- */
+
+.footer {
+  background-color: #0b1120;
+  color: #e2e8f0;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+    align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
